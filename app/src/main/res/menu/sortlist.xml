@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.roundpay.b2b.MainActivity">
+    <item
+        android:id="@+id/sort"
+        android:orderInCategory="100"
+        android:title="@string/sort_fees"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/low"
+        android:orderInCategory="100"
+        android:title="@string/low_fees"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/high"
+        android:orderInCategory="100"
+        android:title="@string/high_fees"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/translate"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always">
+        <menu xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <item
+                android:id="@+id/local"
+
+                android:title="@string/select_language" />
+            <item
+                android:id="@+id/local_english"
+                android:title="@string/text_english" />
+            <item
+                android:id="@+id/local_hindi"
+                android:title="@string/text_hindi"
+
+                />
+
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <ImageView
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/layout_profile"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/layout_profile"
+            android:id="@+id/profile_image"
+            android:background="@drawable/circle_white_bg"
+            android:src="@drawable/rnd_new"
+            android:tint="@color/white"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_width="90dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/userDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/rect"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/nameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/signup_rect"
+                         android:id="@+id/name"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/nameLabel"
+                        android:textSize="14sp"
+                         />
+
+
+
+
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect"
+                    android:layout_marginTop="@dimen/_10sdp"
+
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/emailLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/signup_rect"
+                         android:id="@+id/email"
+
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/emailLabel"
+                        android:textSize="14sp"
+                          />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@drawable/rect"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/aaaapatientcontectLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address  :  "
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/signup_rect"
+                           android:id="@+id/address"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/aaaapatientcontectLabel"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rect"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/patientcontectLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/signup_rect"
+                        android:inputType="number"
+                         android:focusable="false"
+                        android:id="@+id/patientcontect"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_toRightOf="@+id/patientcontectLabel"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                   android:layout_width="match_parent"
+                    android:id="@+id/submit"
+                   android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_40sdp"
+
+                   android:orientation="vertical">
+
+
+                   <TextView
+                        android:layout_width="@dimen/_100sdp"
+                       android:layout_height="wrap_content"
+                       android:background="@drawable/rect"
+                       android:backgroundTint="@color/colorPrimary"
+                       android:textColor="@color/white"
+                       android:text="@string/submit"
+                       android:layout_gravity="center"
+                       android:gravity="center"
+                       android:padding="@dimen/_10sdp"
+                       android:layout_toRightOf="@+id/aaaapatientcontectLabel"
+                       android:textSize="14sp" />
+
+
+
+               </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+     </LinearLayout>
+</LinearLayout>

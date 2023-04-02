@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:layout_above="@+id/btn_ok"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/customerimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/customer_support"
+                    app:civ_border_color="@color/back_bg"
+                    app:civ_border_width="1dp"/>
+
+
+                <ImageView
+                    android:id="@+id/edit_plus"
+                    android:layout_width="@dimen/_15sdp"
+                    android:src="@drawable/ic_plus_sign"
+                    android:tint="@color/white"
+                    android:padding="@dimen/_4sdp"
+                    android:background="@drawable/white_circle"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="15sp"                                                                android:fontFamily="@font/proximanovaregular"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/rect"
+                    android:padding="@dimen/_6sdp"
+                    >
+
+
+
+                    <AutoCompleteTextView
+                        android:drawableTint="@color/lohoyint"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_14sdp"
+                        android:singleLine="true"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile No"
+                    android:textSize="15sp"                                                                android:fontFamily="@font/proximanovaregular"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/rect"
+                    android:padding="@dimen/_6sdp"
+                    >
+
+
+
+                    <AutoCompleteTextView
+                        android:drawableTint="@color/lohoyint"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/mobile_no"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:textSize="@dimen/_14sdp"
+                        android:singleLine="true"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textSize="15sp"                                                                android:fontFamily="@font/proximanovaregular"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/rect"
+                    android:padding="@dimen/_6sdp"
+                    >
+
+
+
+                    <AutoCompleteTextView
+                        android:drawableTint="@color/lohoyint"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/email"
+                        android:textColor="@color/black"
+                         android:textSize="@dimen/_14sdp"
+                        android:singleLine="true"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+  <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textSize="15sp"                                                                android:fontFamily="@font/proximanovaregular"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_10sdp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@drawable/rect"
+                    android:padding="@dimen/_6sdp"
+                    >
+
+
+
+                    <AutoCompleteTextView
+                        android:drawableTint="@color/lohoyint"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/age"
+                         android:hint="yyyy-mm-dd"
+                        android:textColor="@color/black"
+                         android:textSize="@dimen/_14sdp"
+                        android:singleLine="true" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectnew"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Submit"
+        android:textSize="@dimen/_13sdp"
+        android:layout_margin="@dimen/_20sdp"
+
+        android:textColor="@color/white"
+        android:id="@+id/btn_ok"/>
+
+</RelativeLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/lifirst"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:background="@drawable/onlinedashbackground"
+        android:layout_gravity="center"
+        android:elevation="@dimen/_4sdp"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_8sdp"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+              <RelativeLayout
+                  android:layout_width="@dimen/_70sdp"
+                  android:layout_height="@dimen/_70sdp"
+                  android:padding="@dimen/_10sdp"
+                  >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_60sdp"
+                android:id="@+id/opImage"
+                app:civ_border_width="@dimen/_2sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:civ_border_color="@color/green"
+                android:src="@drawable/customer_support"/>
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/online_icon"
+                      android:layout_alignParentEnd="true"
+                      android:layout_alignParentBottom="true"
+                      />
+              </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:weightSum="5"
+                android:orientation="horizontal">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="2"
+                 android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_28sdp"
+                    android:text="Dr. John Riley"
+                    android:id="@+id/name"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:gravity="left"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="service_name"
+                    android:id="@+id/specialities"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:gravity="left"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="service_name"
+                        android:id="@+id/qualification"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:gravity="right"
+                        android:layout_marginRight="@dimen/_7sdp"
+                        android:textSize="@dimen/_10sdp" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/qualification"
+                        android:text="Lorem ipsum dolor sit amet,"
+                        android:id="@+id/expwrence"
+                        android:textColor="@color/black"
+                        android:maxLines="3"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:gravity="left"
+                        android:textSize="@dimen/_10sdp" />
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:drawablePadding="@dimen/_10sdp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/expwrence"
+                    android:text="Lorem ipsum dolor sit amet,"
+                    android:id="@+id/address"
+                    android:textColor="@color/black"
+                    android:maxLines="3"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:gravity="left"
+                    android:textSize="@dimen/_9sdp" />
+                </RelativeLayout>
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_weight="3"
+                 >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Consult Me For : "
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/consultfor"
+                     android:text="text"
+                     android:textColor="@color/black"
+                     android:textSize="@dimen/_9sdp"
+                     />
+             </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 300 consultation fees"
+                android:id="@+id/consultation"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:paddingLeft="12sp"
+                android:fontFamily="@font/proximanovaregular"
+                android:gravity="left"
+                android:textSize="@dimen/_10sdp" />
+            <ProgressBar
+                android:id="@+id/Progress"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:visibility="gone"
+                android:layout_toLeftOf="@id/idCardView"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/doctorsid"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="id"/>
+            <Button
+                android:id="@+id/idCardView"
+                android:layout_alignParentRight="true"
+                style="@android:style/Widget.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_28sdp"
+                android:background="@drawable/rectnew"
+                android:text="@string/consult_now"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/proximanovaregular"
+                android:backgroundTint="@color/button_color"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

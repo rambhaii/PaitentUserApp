@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F2F2">
+
+    <include layout="@layout/toolbar"
+         android:id="@+id/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/_8sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_gravity="center"
+            android:gravity="left"
+            android:background="@drawable/rect"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                 android:id="@+id/doctorimage"
+                 android:src="@drawable/customer_support"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/black"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:id="@+id/doctorname"
+                android:text="Preferred Time"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:textSize="15dp"
+                android:textColor="@color/light_grey" />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="Preferred Time"
+             android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_gravity="left"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/toolbar"
+             android:layout_height="wrap_content"
+            android:background="@drawable/rect"
+             android:padding="@dimen/_5sdp"
+             android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                 >
+
+                <EditText
+                    android:id="@+id/selectdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableTint="@color/light_grey"
+                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:focusable="false"
+                    android:hint="Select Date"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:inputType="number"
+                    android:paddingLeft="16.3dp"
+                    android:paddingTop="9.7dp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="9.7dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                   >
+
+                <EditText
+                    android:id="@+id/time"
+                     android:drawableLeft="@drawable/ic_baseline_watch_later_24"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/light_grey"
+
+                    android:background="@null"
+                    android:focusable="false"
+                    android:hint="Select Time"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:inputType="number"
+                    android:paddingLeft="16.3dp"
+                    android:paddingTop="9.7dp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="9.7dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:text="Practice Location"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_gravity="left"
+           />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+            android:background="@drawable/rect"
+             android:padding="@dimen/_5sdp"
+             android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_5sdp"
+                android:text="Practice Location"
+                 android:textSize="15dp"
+                android:id="@+id/doctoraddress"
+                android:textColor="@color/light_grey"
+                android:layout_gravity="left"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/bt_submit"
+        android:textSize="17sp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:background="@drawable/rectnew"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/proximanovaregular"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

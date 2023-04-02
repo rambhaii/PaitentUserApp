@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.doc24x7.Dashbord.ui.PaymentActivity">
+
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="Linked Wallets"
+        android:fontFamily="@font/proximanovaregular"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+         android:layout_margin="@dimen/_3sdp"
+        android:background="@drawable/rectbacknew"
+        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:textIsSelectable="true"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="No Wallets linked"
+                android:fontFamily="@font/proximanovaregular"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/light_grey"
+                android:textSize="15dp"/>
+
+
+    </LinearLayout>
+
+  <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="Saved Cards"
+        android:fontFamily="@font/proximanovaregular"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="16dp"/>
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+         android:layout_margin="@dimen/_3sdp"
+        android:background="@drawable/rectbacknew"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/proximanovaregular"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:text="No Cards Saved"
+            android:textColor="@color/light_grey"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_15sdp"
+        android:paddingRight="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="UPI"
+        android:fontFamily="@font/proximanovaregular"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_gravity="center"
+        android:gravity="center"
+         android:layout_margin="@dimen/_3sdp"
+        android:background="@drawable/rectbacknew"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:paddingLeft="@dimen/_3sdp"
+                android:paddingRight="@dimen/_3sdp"
+                android:text="No Saved UPI ID"
+                android:fontFamily="@font/proximanovaregular"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/light_grey"
+                android:textSize="15dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

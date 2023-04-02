@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/mainlinear"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:background="@drawable/rect"
+        android:padding="10dp"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:id="@+id/lay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/back_bg"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/customer_support"
+                    android:text="V V"
+                    android:textStyle="bold"
+                    android:id="@+id/user_name"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="moments ago"
+                    android:visibility="gone"
+                    android:id="@+id/user_mobile"
+                    android:textColor="#636060"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay1"
+                android:visibility="gone"
+                android:drawableLeft="@drawable/ic_email_phone"
+                android:text="moments ago"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:drawableTint="@color/back_bg"
+                android:id="@+id/emailiduser"
+                android:layout_marginBottom="5dp"
+                android:textColor="#636060"
+                android:textSize="12dp"/>
+
+            <ImageView
+                android:id="@+id/call"
+                android:src="@drawable/ic_baseline_add_ic_call_24"
+                android:tint="#359704"
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:text="  ago"
+                  android:textColor="#359704"
+                android:textSize="12dp"/>
+
+
+
+            <TextView
+                android:layout_marginRight="5dp"
+                android:textAllCaps="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                android:gravity="center"
+                 android:text="V V"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_alignParentRight="true"
+                android:id="@+id/inoutcreated"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:id="@+id/lay3"
+            android:layout_below="@id/lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                android:layout_marginRight="5dp"
+                android:drawableTint="@color/back_bg"
+                android:drawablePadding="@dimen/_10sdp"
+                android:id="@+id/pickup_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08/05/18 4:31 PM"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Published date)"
+                android:textColor="#636060"
+                android:textSize="12dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay5"
+            android:layout_below="@id/lay3"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:src="@drawable/newline"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/lay7"
+                android:layout_below="@id/lay5"
+                 android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/pickup_address"
+                    android:layout_height="wrap_content"
+                    android:text="New Delhi, Delhi, India"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/delivery_address"
+                    android:text="Agra, Uttar Pradesh, India"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+             android:layout_below="@id/lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                android:layout_marginRight="5dp"
+                android:drawableTint="@color/back_bg"
+                android:drawablePadding="@dimen/_10sdp"
+                android:id="@+id/shifting_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08/05/18 4:31 PM"
+                android:textColor="#000000"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Shifting date)"
+                android:textColor="#636060"
+                android:textSize="12dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+             android:layout_below="@id/lay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:drawableLeft="@drawable/ic_reporbook"
+                android:layout_marginRight="5dp"
+                android:drawableTint="@color/back_bg"
+                android:drawablePadding="@dimen/_10sdp"
+                android:id="@+id/itemshift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08/05/18 4:31 PM"
+                android:textColor="#000000"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Shifting date)"
+                android:textColor="#636060"
+                android:textSize="12dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/lay9"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/_65sdp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_6sdp"
+                    android:tint="@color/back_bg"
+                    android:src="@drawable/ic_box"
+/>
+                <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:drawablePadding="@dimen/_10sdp"
+                    android:text="1   1BHKvv     1BHK1BHK   "
+                    android:paddingTop="@dimen/_6sdp"
+                    android:id="@+id/package_size"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_baseline_home_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1BHK"
+                    android:visibility="gone"
+                    android:id="@+id/city"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+
+
+                <TextView
+                    android:drawableLeft="@drawable/ic_baseline_date_range_24"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="09/05/18"
+                    android:visibility="gone"
+
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(Shifting Date)"
+                    android:textColor="#636060"
+                    android:visibility="gone"
+
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/accepted"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  BUY  "
+                    android:padding="@dimen/_5sdp"
+                     android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

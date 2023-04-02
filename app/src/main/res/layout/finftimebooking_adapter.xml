@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/_3sdp"
+            android:paddingRight="@dimen/_3sdp"
+            android:maxLines="2"
+            android:text="6:12 AM"
+            android:padding="@dimen/_5sdp"
+            android:fontFamily="@font/proximanovaregular"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:textColor="@color/bookingTitle"
+            android:textSize="15dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<GridLayout
+    android:layout_gravity="center"
+    android:id="@+id/ll"
+    android:columnCount="4"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+</GridLayout>
+        </ScrollView>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:visibility="gone"
+    android:layout_marginTop="@dimen/_6sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@color/bookingTitle"/>
+</LinearLayout>

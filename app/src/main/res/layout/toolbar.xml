@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:background="@drawable/toolbar_bg"
+    android:popupTheme="@style/AppTheme"
+    android:theme="@style/AppTheme">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:gravity="end"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:id="@+id/shownotification"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/message_icon">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/book_img"
+        android:layout_width="@dimen/_38sdp"
+        android:adjustViewBounds="true"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/shownotification"
+        android:src="@drawable/book_icon"/>
+
+    <ImageView
+        android:id="@+id/language_img"
+        android:layout_width="@dimen/_40sdp"
+        android:adjustViewBounds="true"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/book_img"
+        android:src="@drawable/language_icon"/>
+
+        <TextView
+            android:layout_width="@dimen/_13sdp"
+            android:id="@+id/noticount"
+            android:textSize="@dimen/_6sdp"
+            android:gravity="center"
+            android:text="0"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/white_circle"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white"
+            android:layout_height="@dimen/_13sdp"/>
+
+
+
+</LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

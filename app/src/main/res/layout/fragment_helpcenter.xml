@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:background="@drawable/backgroundscreen"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_support" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/back_bg"
+                android:text="Dear Users"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:textColor="@color/back_bg"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:text="Call our Customer or email us for inquries, comments,suggestions and complaints"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/callCustomerSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Call Customer Support"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mailSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/colorPrimary"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Mail Customer Support"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+             <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/webside"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/rect"
+                 android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="http://cureu.in/"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/blue" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</FrameLayout>

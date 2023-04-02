@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sheet"
+    android:background="@color/white"
+    android:padding="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textColor="#0C0808"/>
+            <ImageView
+                android:id="@+id/bluetick"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginLeft="@dimen/_130sdp"
+                android:background="@color/white"
+                android:src="@drawable/bt"></ImageView>
+        </LinearLayout>
+
+
+      <!--      <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/mon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mon"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_18sdp"/>
+                <TextView
+                    android:id="@+id/mondate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="07"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="#0C0808"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textSize="@dimen/_18sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tue"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <TextView
+                        android:id="@+id/tuedate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="#0C0808"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/wed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wed"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <TextView
+                        android:id="@+id/wedate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="#0C0808"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/thu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thu"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <TextView
+                        android:id="@+id/thudate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="#0C0808"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/fri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fri"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <TextView
+                        android:id="@+id/fridate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="#0C0808"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/sat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sat"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"/>
+
+                    <TextView
+                        android:id="@+id/satdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="07"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="#0C0808"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:textSize="@dimen/_18sdp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>     -->
+
+
+
+
+
+            <TextView
+                android:id="@+id/scheduletime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Schedule Time"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textColor="#0C0808"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/white"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/time1"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/button_oval"
+                    android:text="08:00 am"
+                    android:textAllCaps="false"
+                    android:textColor="#6F100F0F"/>
+                <Button
+                    android:id="@+id/time2"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/button_oval"
+                    android:text="08:00 am"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#6F100F0F"/>
+                <Button
+                    android:id="@+id/time3"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/button_oval"
+                    android:text="08:00 am"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#6F100F0F"/>
+                <Button
+                    android:id="@+id/time4"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/button_oval"
+                    android:text="08:00 am"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:textAllCaps="false"
+                    android:textColor="#6F100F0F"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

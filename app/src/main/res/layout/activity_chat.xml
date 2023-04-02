@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:id="@+id/Chat_F"
+        android:fitsSystemWindows="true"
+         tools:context="com.qboxus.musictoknew.Chat.Chat_Activity">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+             app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:background="@color/colorPrimary">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/colorPrimary"
+                android:background="@drawable/rect">
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/Goback"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitStart"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_arrow_back"
+                    android:layout_centerVertical="true"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_toRightOf="@+id/Goback"
+                    android:id="@+id/profileimage"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/customer_support"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat"
+                    android:id="@+id/username"
+                    android:textSize="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/profileimage"
+                    android:textColor="@color/white"/>
+
+
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chat_layout"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:visibility="visible"
+            android:layout_below="@id/toolbar">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/writechatlayout"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:id="@+id/chatlist">
+             </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/writechatlayout"
+                android:background="@drawable/editfield_releative_border"
+                android:layout_alignParentBottom="true">
+
+                <ImageButton
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/uploadimagebtn"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="fitCenter"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_keyboard"
+                    android:background="@color/transparent"/>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/uploadimagebtn"
+                     android:layout_toLeftOf="@+id/sendbtn">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/msgedittext"
+                        android:textSize="14sp"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColorHint="@color/light_grey"
+                        android:textColor="@color/black"
+                         android:backgroundTint="@android:color/transparent"
+                        android:hint="Send Message Here..."/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/sendbtn"
+                    android:layout_alignParentRight="true"
+                    android:text="Send"
+                    android:padding="5dp"
+                    android:scaleType="fitXY"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_send"
+                    android:background="@android:color/transparent"/>
+
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

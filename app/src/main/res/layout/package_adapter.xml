@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:background="@drawable/rect"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/lay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/back_bg"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                     android:text="V V"
+                    android:textStyle="bold"
+                    android:id="@+id/package_name"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+   <TextView
+                    android:layout_marginRight="15dp"
+       android:layout_alignParentRight="true"
+                    android:textAllCaps="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableTint="@color/back_bg"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                     android:text="V V"
+                     android:id="@+id/credit"
+                    android:textColor="#000000"
+                    android:textSize="15dp"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:id="@+id/lay9"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/_65sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="@color/back_bg"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:text="1BHK"
+                        android:id="@+id/amount"
+                        android:textColor="#000000"
+                        android:textSize="15dp"/>
+
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/accepted"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/btn3">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="      Pay Now      "
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="#000000"
+                        android:textSize="12dp"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

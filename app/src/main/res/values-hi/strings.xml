@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Doc24x7</string>
+    <string name="text_english" translatable="false">अंग्रेज़ी</string>
+    <string name="text_hindi" translatable="false">हिंदी</string>
+    <string name="share" translatable="true">शेयर</string>
+    <string name="viewprofile" translatable="true">
+प्रोफ़ाइल देखें और संपादित करें</string><string name="profile" translatable="true">
+<string name="send_report">
+रिपोर्ट भेजो</string>
+    <string name="send_report_optional">
+
+रिपोर्ट भेजें (वैकल्पिक)</string>
+प्रोफ़ाइल</string>
+    <string name="my_appointment"  translatable="false">मेरी नियुक्ति</string>
+    <string name="help_center"  translatable="false">सहायता केंद्र</string>
+    <string name="symptoms">लक्षण</string>
+    <string name="logout">लॉग आउट</string>
+    <string name="action_settings">Settings</string>
+    <string name="network_error_title">नेटवर्क त्रुटि!</string>
+    <string name="err_msg_mobile">खाली नहीं किया जा सकता</string>
+    <string name="err_msg_email">
+ईमेल रिक्त नहीं हो सकता</string>
+    <string name="online_doctors" >
+डॉक्टर ऑनलाइन हैं \n अभी परामर्श करें</string>
+    <string name="err_msg_username">उपयोगकर्ता पता रिक्त नहीं हो सकता</string>
+    <string name="err_msg_password">
+पासवर्ड खाली नहीं हो सकता</string>
+    <string name="consult_now" >अब परामर्श करें</string>
+    <string name="err_msg_contact">संपर्क नंबर खाली नहीं हो सकता</string>
+    <string name="err_msg_lastname">नाम खाली नहीं हो सकता</string>
+    <string name="indian_rupay">\U+20B9</string>
+    <string name="facebook_app_id">422040801847810</string>
+    <string name="start_timer">stop_timer stop_timer stop_timer </string>
+    <string name="rupiya">Rs </string>
+    <string name="job_success">नौकरी की सफलता</string>
+    <string name="ui_ux_designer">UI/UX Designer</string>
+    <string name="my_desc">अपने ब्रांड को जीवन देने के लिए सौंदर्यशास्त्र और लालित्य के बीच मधुर स्थान पर करना। मेरी राय किसी और की नहीं बल्कि खुद की है।</string>
+    <string name="about_me">
+मेरे बारे में</string>
+    <string name="contact">संपर्क करें</string>
+    <string name="skills">
+कौशल</string>
+    <string name="send_prescription_and_get_medicine">
+प्रिस्क्रिप्शन भेजें और दवा प्राप्त करें</string>
+    <string name="ratings">
+स्टार रेटिंग</string>
+    <string name="samplereview">लोरम इप्सम डोलर अमेट, कंसेटेटुर एडिपिसिंग एलीट। डोनेक प्रेटियम बाइबेंडम सैपियन, यूआरस्मोड मस्सा। ड्यूस कनैलिसिस सेम सेड टर्पिस एलिमेंट नीलाम.</string>
+
+
+    <string name="network_error_message">कृपया अपना नेटवर्क कनेक्शन जांचें और पुनः प्रयास करें।</string>
+    <string name="attention_error_title">
+ध्यान!</string>
+    <string name="successful_title">
+सफल!</string>
+    <string name="password_error">कृपया मान्य पासवर्ड दर्ज करें</string>
+    <string name="mobilenumber_error">वैध मोबाइल नंबर दर्ज करें</string>
+    <string name="err_msg_piclocation">
+Pic स्थान चुनेंr</string>
+    <string name="err_msg_droplocation">ड्रॉप स्थान चुनें.</string>
+    <string name="transactionId_error">मान्य लेनदेन आईडी दर्ज करें</string>
+    <string name="amount_error">Please enter recharge amount</string>
+    <string name="amount_transfer_error">Please enter amount</string>
+    <string name="transfer_type_error">Please select payment system</string>
+    <string name="bank_error">Please select bank</string>
+    <string name="operator_error">Please select operator</string>
+    <string name="previouspass_error">Incorrect current password!</string>
+    <string name="newpass_error">New password not matched!</string>
+    <string name="pinpass_error">Pin password not matched!</string>
+    <string name="transaction_empty_message">No transaction history found!</string>
+    <string name="empty_list_message">No data history found!</string>
+    <string name="login_error_title">Error!</string>
+    <string name="agora_app_id">dfb0392b4acd41969e218674b588fd5c</string>
+    <string name="err_msg_new_pass">Please Enter Your New Password</string>
+    <string name="err_msg_cnf_pass">Please Enter Your Confirm Password</string>
+    <string name="err_msg_match_pass">New Password and Confirm Password does not match.</string>
+    <string name="err_msg_old_pass">Please Enter Your Old Password</string>
+
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="promo_apply_text">Apply promo code to avail exciting offers</string>
+    <string name="tagline">Talk to doctors online about your issues and get answers. Get online consultation from verified doctors online.</string>
+    <string name="label_options">Options</string>
+    <string-array name="string_array_frame_rate">
+        <item>1</item>
+        <item>7</item>
+        <item>10</item>
+        <item>15</item>
+        // the default one
+        <item>24</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="encryption_mode_values">
+        <item>AES-128-XTS</item>
+        <item>AES-256-XTS</item>
+    </string-array>
+    <string-array name="string_array_bit_rate">
+        <item>80</item>
+        // 120P
+        <item>160</item>
+        // 180P
+        <item>200</item>
+        // 240P
+        <item>400</item>
+        // 360P
+        <item>500</item>
+        // 480P
+        <item>1000</item>
+        // 720P
+    </string-array>
+
+    // DO NOT TRANSLATE
+    <string name="bit_rate_value_with_unit">%d kbps</string>
+    <string name="frame_rate_value_with_unit">%d fps</string>
+    <string name="agora_access_token">00692c2c498cd6a4f8784c59a716d520f1dIABep2ms9C5DstlvYmSt1jnLCC76KxiUq4Rzd2c2qkdEycVEwG0AAAAAEAAEa9nrwRlJYAEAAQDBGUlg</string>
+    <string-array name="string_array_resolutions">
+        <item>160x120</item>
+        // 120P
+        <item>320x180</item>
+        // 180P
+        <item>320x240</item>
+        // 240P the default one
+        <item>640x360</item>
+        // 360P
+        <item>640x480</item>
+        // 480P
+        <item>1280x720</item>
+        // 720P
+    </string-array>
+
+
+    <string name="str_login">Login</string>
+    <string name="str_account">Account</string>
+    <string name="account_empty">Account can not be empty</string>
+    <string name="account_too_long">Account can not exceed 64 characters</string>
+    <string name="account_starts_with_space">Account can not starts with space</string>
+    <string name="account_literal_null">Account can not be \"null\"</string>
+    <string name="login_failed">Login failed</string>
+
+    <string name="title_peer_msg">Peer to peer message</string>
+    <string name="title_channel_message">Channel message</string>
+    <string name="hint_friend">Friends name</string>
+    <string name="hint_channel">Channel name</string>
+    <string name="hint_enable_offline_message">Enable offline message</string>
+    <string name="account_cannot_be_yourself">Account can not be yourself</string>
+    <string name="channel_name_empty">Channel name can not be empty</string>
+    <string name="channel_name_too_long">Channel name can not exceed 64 characters</string>
+    <string name="channel_name_starts_with_space">Channel name can not start with space</string>
+    <string name="channel_name_literal_null">Channel name can not be \"null\"</string>
+    <string name="btn_chat">Chat</string>
+    <string name="btn_join">Join</string>
+    <string name="message_cancle_appointment">डॉक्टर के अवकाश पर होने के कारण आपकी नियुक्ति रद्द कर दी गई है</string>
+    <string name="channel_title" translatable="false">%s(%d)</string>
+    <string name="join_channel_failed">Join channel failed</string>
+    <string name="single_input">सिंगल लाइन इनपुट</string>\
+    <string name="str_send">संदेश</string>
+    <string name="send_msg_failed">संदेश भेजने में विफल</string>
+    <string name="peer_offline">सहकर्मी ऑफ़लाइन है</string>
+    <string name="message_cached">संदेश सर्वर द्वारा कैश किया गया</string>
+    <string name="reconnecting">नेटवर्क पुन: कनेक्ट हो रहा है
+...</string>
+    <string name="account_offline">Connection lost</string>
+
+    <string name="find_doctor_in_top_speci">शीर्ष विशिष्टताओं में डॉक्टर खोजें</string>
+    <string name="finddoctornear_you">पास के डॉक्टर का "\n"पता लगाएं
+आप </string>
+    <string name="find_doctorby_name">
+नाम से डॉक्टर खोजें</string>
+    <string name="finddoctorbyspecilist">
+विशेषज्ञ द्वारा चिकित्सक का पता लगाएं</string>
+    <string name="find_doctor_by_symptom">लक्षणों से चिकित्सक का पता लगाएं</string>
+    <string name="specialities">
+विशिष्टताओं</string>
+    <string name="searchpythology">पाइथोलॉजी खोजें</string>
+
+    <string name="bookappointment">निर्धारित तारीख बुक करना</string>
+    <string name="search_by_doctor">डॉक्टर, विशेषज्ञ द्वारा खोजें ।।</string>
+    <string name="search">खोज</string>
+    <string name="purpose_of_visit">आने का उद्देश्य</string>
+    <string name="consultation">परामर्श</string>
+    <string name="date_and_time">दिनांक और समय</string>
+    <string name="please_provide_patient_detail">कृपया रोगी का विवरण दें:</string>
+    <string name="patient_name">
+रोगी का नाम</string>
+    <string name="patient_mobile">रोगी मोबाइल</string>
+    <string name="patient_age">
+रोगी की आयु</string>
+    <string name="clientmobilenumber">ग्राहक मोबाइल नंबर</string>
+    <string name="patient_email">रोगी ईमेल (वैकल्पिक)</string>
+    <string name="bookingterm">बुकिंग करके हम आपके नियमों और शर्तों से सहमत हैं</string>
+    <string name="patient_sympton">रोगी का लक्षण</string>
+    <string name="confirm">
+पुष्टि करें</string>
+    <string name="confirm_done">
+पुष्टि करें</string>
+
+
+
+    <string name="appointment_for">के लिए नियुक्ति</string>
+    <string name="self">
+स्वयं</string>
+    <string name="someone_else">किसी और को</string>
+    <string name="version">
+संस्करण : 1.2</string>
+    <string name="paymentdetail">
+भुगतान विवरण </string>
+    <string name="consultationfees">
+परामर्श शुल्क : </string>
+    <string name="amounttopay">
+भुगतान की जाने वाली राशि  :   </string>
+    <string name="payandconsult">
+पे एंड कंसल्ट </string>
+
+    <string name="consult_with_doctor">डॉक्टर से सलाह लें</string>
+    <string name="entersymptoms">लक्षण दर्ज करें</string>
+    <string name="submit">प्रस्तुत</string>
+    <string name="senddigit">हमने आपको 6 अंकों के सत्यापन कोड के साथ +918318630645 \ n पर एक एसएमएस भेजा है</string>
+    <string name="help">मदद</string>
+    <string name="name">
+नाम</string>
+    <string name="email">
+ईमेल</string>
+    <string name="website">वेबसाइट : </string>
+    <string name="time">
+समय:  </string>
+    <string name="location">स्थान : </string>
+    <string name="locationluck"> लखनऊ, उत्तर प्रदेश 226001</string>
+    <string name="timedata">सुबह 8 से शाम 6 बजे (सोमवार से शुक्रवार) "\ n" सुबह 9 बजे से शाम 4 बजे तक (शनिवार से रविवार)</string>
+
+    <string name="sucessful">बहुत अच्छा लगा</string>
+    <string name="patient_login">रोगी लॉगिन करें</string>
+    <string name="phone">
+मोबाइल नंबर</string>
+    <string name="register">
+रजिस्टर करें</string>
+    <string name="otpverification">ओटप सत्यापन</string>
+    <string name="enter_code">कोड दर्ज करें</string>
+    <string name="continueeee">जारी रखें</string>
+    <string name="enter_your_mobile_number">अपना मोबाइल नंबर दर्ज करें</string>
+    <string name="enter_valid_mobile_number">वैध मोबाइल नंबर दर्ज करें</string>
+    <string name="tell_us_your_symptom">हमें अपना लक्षण या स्वास्थ्य समस्या बताएं</string>
+    <string name="year_experiance"> वर्ष का अनुभव</string>
+    <string name="consultation_fees"> परामर्श शुल्क</string>
+    <string name="booking_date"> बुक करने की तिथि : </string>
+    <string name="consult_date">
+परामर्श तिथि : </string>
+    <string name="no_prescription"> कोई प्रिस्क्रिप्शन नहीं</string>
+    <string name="view_prescription"> पर्चे देखें </string>
+    <string name="failed">   विफल </string>
+    <string name="no_doctors_online"> ऑनलाइन कोई डॉक्टर नहीं</string>
+    <string name="no_doctors_found"> कोई डॉक्टर नहीं मिला</string>
+    <string name="failure_connection_reset">विफलता कनेक्शन रीसेट करें</string>
+    <string name="chat_now">
+डॉक्टर ऑनलाइन हैं\nअभी चैट करें</string>
+    <string name="LOADING">
+लोड हो रहा है...</string>
+    <string name="no_data_found">
+डाटा प्राप्त नहीं हुआ</string>
+    <string name="dialog_cancel">रद्द करना</string>
+    <string name="dialog_default_title">यहाँ एक संदेश है!</string>
+    <string name="dialog_ok">
+ठीक है</string>
+    <string name="sort_fees"><b>शुल्क की छंटनी करें</b></string>
+    <string name="low_fees">कम शुल्क</string>
+    <string name="high_fees">उच्च शुल्क</string>
+    <string name="select_language"><b>भाषा का चयन करें</b></string>
+    <string name="male">
+पुरुष</string>
+    <string name="female">
+महिला</string>
+</resources>

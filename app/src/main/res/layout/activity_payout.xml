@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.doc24x7.NewDashboard.Doctor_details">
+
+    <include
+        android:id="@+id/doctoolbar"
+        layout="@layout/doctortoolbar" />
+
+    <TextView
+        android:id="@+id/confirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appointment Confirmed"
+        android:textSize="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#60BA11"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/drcard"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_15sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/docimage"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/docimg" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp">
+
+                <TextView
+                    android:id="@+id/docname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Martin Pilier"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp"/>
+                <TextView
+                    android:id="@+id/docspec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cardiologist"/>
+                <TextView
+                    android:id="@+id/docadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Luxemberg Ville- 2 Km"/>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_link"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/_15sdp"/>
+            <Button
+                android:id="@+id/done_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:background="@drawable/shadowback"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Done"
+                android:textColor="@color/blue"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+    <TextView
+        android:id="@+id/reasonvisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reason of Visit"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_15sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/active_dot"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="Consultation"
+                android:textSize="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dateandtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date And Time"
+                android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_7sdp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/active_dot"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21-11-2021"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10:30 am"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"/>
+
+            </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/appointmentfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appointment For"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_15sdp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:src="@drawable/active_dot"/>
+                <RadioButton
+                    android:id="@+id/rbtnself"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Self"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"/>
+                <RadioButton
+                    android:id="@+id/rbtnsomeelse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Someone Else"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+    <TextView
+        android:id="@+id/patientname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Name"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_15sdp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/active_dot"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Deo"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/gender"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Gender"
+    android:layout_marginLeft="@dimen/_12sdp"
+    android:textSize="@dimen/_15sdp"
+    android:textColor="@color/black"
+    android:layout_marginTop="@dimen/_15sdp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/active_dot"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+                    <RadioButton
+                        android:id="@+id/rbtnmale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"/>
+                <RadioButton
+                    android:id="@+id/rbtnfemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_15sdp"/>
+             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/active_dot"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="41 Yrs"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"/>
+             </LinearLayout>
+            <TextView
+                android:id="@+id/symptoms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Symptoms"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_15sdp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/active_dot"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fever,Pain"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight (Optional)"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_15sdp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/active_dot"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="70+ Kgs"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

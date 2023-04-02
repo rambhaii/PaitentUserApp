@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/rect"
+    android:layout_margin="@dimen/_3sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prescription Document"
+                    android:id="@+id/resposestatus"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/popPreciption_img"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/rnd_new"
+                 android:layout_height="@dimen/_400sdp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Enter your registered User Email OR Phone"
+                android:textSize="@dimen/_13sdp"
+                android:gravity="left"
+                android:id="@+id/msg"
+                android:visibility="gone"
+                android:textColor="@color/black" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="right"
+                android:layout_marginTop="30dp"
+                android:alpha="0.8">
+
+                <Button
+                    android:id="@+id/okButton"
+                    android:background="@drawable/rect"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:text="Ok"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

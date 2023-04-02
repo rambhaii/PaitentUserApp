@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.doc24x7.yoursdoc.doc24x7.Register.ui.RegisterActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:visibility="gone" />
+
+
+
+        <LinearLayout
+            android:id="@+id/registerdetail"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@drawable/semicircle" />
+
+                <ImageView
+                    android:layout_width="@dimen/_75sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/rnd_new"
+                    android:tint="@color/white" />
+
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="@dimen/_90sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="12dp"
+                                android:fontFamily="@font/proximanovaregular"
+                                android:text="@string/name"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rect"
+                                android:padding="@dimen/_6sdp">
+
+                                <ImageView
+                                    android:layout_width="@dimen/_20sdp"
+                                    android:layout_height="@dimen/_20sdp"
+                                    android:src="@drawable/ic_baseline_account_circle_24"
+                                    android:visibility="gone" />
+
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:drawableTint="@color/lohoyint"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="@dimen/_90sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="12dp"
+                                android:fontFamily="@font/proximanovaregular"
+                                android:text="@string/email"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+
+                                android:background="@drawable/rect"
+                                android:padding="@dimen/_6sdp">
+
+
+                                <EditText
+
+                                    android:id="@+id/email"
+                                    android:layout_width="match_parent"
+
+
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:drawableTint="@color/lohoyint"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp" />
+
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                             android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="@dimen/_90sdp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="12dp"
+                                android:visibility="gone"
+                                android:fontFamily="@font/proximanovaregular"
+                                android:text="Age"
+                                android:textColor="@color/black"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:background="@drawable/rect"
+                                android:padding="@dimen/_6sdp">
+
+
+                                <EditText
+
+                                    android:id="@+id/age"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:drawablePadding="@dimen/_10sdp"
+                                    android:drawableTint="@color/lohoyint"
+                                    android:inputType="number"
+                                    android:singleLine="true"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_14sdp" />
+
+
+                            </RelativeLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="@dimen/_90sdp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:layout_marginLeft="12dp"
+                                    android:fontFamily="@font/proximanovaregular"
+                                    android:gravity="center_vertical"
+
+                                    android:text="@string/phone"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_marginTop="@dimen/_5sdp"
+                                    android:background="@drawable/rect"
+                                    android:padding="@dimen/_6sdp">
+
+
+                                    <EditText
+                                        android:id="@+id/contact"
+                                        android:focusable="false"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:drawablePadding="@dimen/_10sdp"
+                                        android:drawableTint="@color/lohoyint"
+                                        android:inputType="number"
+                                        android:maxLength="10"
+                                        android:singleLine="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/_14sdp" />
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                             android:orientation="vertical">
+
+
+
+                             <Button
+                                android:id="@+id/bt_register"
+                                style="@android:style/Widget.Button.Small"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:background="@drawable/semicirclebpttom"
+                                android:fontFamily="@font/proximanovaregular"
+                                android:text="@string/register"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>
+</ScrollView>

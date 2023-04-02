@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.doc24x7.yoursdoc.doc24x7.DOctoeByIdActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:id="@+id/tabs"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/online_tab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/_12sdp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="@drawable/rect_blue"
+            android:textColor="@color/white"
+            android:padding="@dimen/_5sdp"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginRight="5dp"
+            android:text="Online Appointment"
+            android:layout_gravity="end"/>
+        <TextView
+            android:id="@+id/offline_tab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/dark_black"
+            android:padding="@dimen/_5sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="Offline Appointment"
+            android:background="@drawable/rect"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:singleLine="true"
+        android:visibility="gone"
+        android:id="@+id/heading"
+        android:text="Online Booking Schedule"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/lifirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@drawable/rectbackgra"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/opImage"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:src="@drawable/customer_support" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_28sdp"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="Dr. Martin Pilier"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/specialities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="service_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/qualification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="service_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/qualification"
+                        android:drawableTint="@color/light_grey"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:gravity="left|top"
+                        android:maxLines="3"
+                        android:text="Lorem "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+                    <TextView
+                        android:id="@+id/clinic_fees"
+                        android:layout_below="@id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableTint="@color/light_grey"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:gravity="left|top"
+                        android:maxLines="3"
+                        android:text="Lorem "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/ll_week"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/mon"
+
+            android:layout_width="0dp"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:textColor="@color/white"
+            android:background="@drawable/rect_blue"
+            android:text="Mon"/>
+
+        <TextView
+            android:id="@+id/tue"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:background="@drawable/rect"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tue"/>
+
+        <TextView
+            android:id="@+id/wed"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:background="@drawable/rect"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Wed"/>
+
+        <TextView
+            android:id="@+id/thurs"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:background="@drawable/rect"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thurs"/>
+
+        <TextView
+            android:id="@+id/fri"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:background="@drawable/rect"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fri"/>
+
+        <TextView
+            android:id="@+id/sat"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:background="@drawable/rect"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sat"/>
+
+
+        <ImageView
+            android:id="@+id/calander"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_outline_addchart_24"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_selectedDate"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:background="@drawable/rect"
+        android:layout_height="wrap_content"
+        android:text="Satasdad"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/checkoutlayout"
+        android:layout_below="@+id/sat"
+        android:nestedScrollingEnabled="false"
+        android:padding="@dimen/_15sdp"
+
+        android:scrollbars="vertical"
+        tools:context="example.javatpoint.com.recyclerviewlist.MainActivity" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctor is not Available Today"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:id="@+id/notAvailable"
+        android:gravity="center"
+        />
+    </LinearLayout>
+
+
+
+

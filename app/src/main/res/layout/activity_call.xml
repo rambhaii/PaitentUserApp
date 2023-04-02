@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.doc24x7.yoursdoc.doc24x7.Video.CallActivity">
+
+    <com.doc24x7.Video.ui.layout.GridVideoViewContainer
+        android:id="@+id/grid_video_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ViewStub
+        android:id="@+id/small_video_view_dock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:inflatedId="@id/small_video_view_dock"
+        android:layout="@layout/small_video_view_dock" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.doc24x7.Video.propeller.ui.AGLinearLayout
+            android:id="@+id/extra_ops_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:onClick="onMixingAudioClicked"
+                android:scaleType="fitXY"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/btn_audio_mixing_off" />
+
+        </com.doc24x7.Video.propeller.ui.AGLinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:weightSum="5"
+            android:id="@+id/linerbottom"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:onClick="onVideoMuteClicked"
+                    android:scaleType="fitXY"
+                    android:tint="@color/white"
+                    android:padding="@dimen/_7sdp"
+                    android:background="@drawable/videoicon_backgroung"
+                    android:src="@drawable/videocam" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:onClick="onSwitchCameraClicked"
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/videoicon_backgroung"
+                    android:tint="@color/white"
+                    android:src="@drawable/camera_switch" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:onClick="onHangupClicked"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:src="@drawable/call_end_icon"
+                    android:padding="@dimen/_12sdp"
+                    android:background="@drawable/end_call_background"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/switch_speaker_id"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:onClick="onSwitchSpeakerClicked"
+                    android:scaleType="fitXY"
+                    android:tint="@color/white"
+                    android:padding="@dimen/_8sdp"
+                    android:background="@drawable/videoicon_backgroung"
+                    android:src="@drawable/volume_on_icon" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:onClick="onVoiceMuteClicked"
+                    android:scaleType="fitXY"
+                    android:padding="@dimen/_7sdp"
+                    android:tint="@color/white"
+                    android:background="@drawable/videoicon_backgroung"
+                    android:src="@drawable/mic_icon" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <com.doc24x7.Video.propeller.ui.AGLinearLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/bottom_action_container"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:paddingStart="8dp"
+                android:paddingLeft="8dp"
+                android:paddingEnd="8dp"
+                android:paddingRight="8dp">
+            </LinearLayout>
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/switch_speaker_id"-->
+            <!--                    android:layout_width="40dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:onClick="onSwitchSpeakerClicked"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/btn_speaker" />-->
+
+            <!--                <View-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="20" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="40dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:onClick="onFilterClicked"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/btn_filter" />-->
+
+            <!--                <View-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="20" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="40dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:onClick="onHangupClicked"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/btn_hangup" />-->
+
+            <!--                <View-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="20" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="40dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:onClick="onVideoMuteClicked"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/btn_camera" />-->
+
+            <!--                <View-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="20" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="40dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:onClick="onVoiceMuteClicked"-->
+            <!--                    android:scaleType="fitXY"-->
+            <!--                    android:src="@drawable/btn_microphone" />-->
+
+
+
+            <LinearLayout
+                android:id="@+id/msg_input_container"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@color/colorAccent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+            </LinearLayout>
+            <!--                <ImageView-->
+            <!--                    android:layout_width="54dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:onClick="onClickHideIME"-->
+            <!--                    android:scaleType="center"-->
+            <!--                    android:src="@drawable/btn_keyboard_hide" />-->
+
+            <!--                <EditText-->
+            <!--                    android:id="@+id/msg_content"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="match_parent"-->
+            <!--                    android:layout_weight="20"-->
+            <!--                    android:background="@android:color/transparent"-->
+            <!--                    android:hint="msg_say_something"-->
+            <!--                    android:imeActionLabel="label_send"-->
+            <!--                    android:imeOptions="actionSend"-->
+            <!--                    android:inputType="text"-->
+            <!--                    android:maxLines="1"-->
+            <!--                    android:textColor="@android:color/white"-->
+            <!--                    android:textColorHint="@android:color/white" />-->
+
+            <!--            </LinearLayout>-->
+
+        </com.doc24x7.Video.propeller.ui.AGLinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/msg_list"
+            android:layout_width="272dp"
+            android:layout_height="144dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+</FrameLayout>

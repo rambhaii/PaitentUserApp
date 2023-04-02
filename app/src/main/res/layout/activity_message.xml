@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/green"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/message_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yallow"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickFinish"
+        android:padding="5dp"
+        android:src="@drawable/icon_back" />
+    <EditText
+        android:id="@+id/message_edittiext"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:paddingStart="@dimen/_10sdp"
+        android:layout_toLeftOf="@+id/selection_chat_btn"
+        android:background="@drawable/messageback"
+        android:hint="@string/single_input"
+        android:lines="1"
+        android:drawablePadding="@dimen/_6sdp"
+        android:padding="5dp" />
+    <ImageView
+        android:id="@+id/selection_chat_btn"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/btnsendiconback"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:src="@drawable/sendbtnicon"
+        android:text="@string/str_send"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/selection_img_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:visibility="gone"
+        android:src="@drawable/ic_image_black_24dp"
+        android:textColor="@color/white" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/message_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/message_edittiext"
+        android:layout_below="@+id/message_title" />
+
+    <ImageView
+        android:id="@+id/big_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:onClick="onClick"
+        android:visibility="gone" />
+
+</RelativeLayout>

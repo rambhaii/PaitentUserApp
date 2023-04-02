@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Language"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        />
+   <LinearLayout
+       android:layout_marginTop="@dimen/_10sdp"
+       android:layout_width="wrap_content"
+       android:orientation="horizontal"
+       android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/li_hindi"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@drawable/hindi"
+
+            android:padding="@dimen/_8sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hindi"
+            android:textStyle="bold"
+            android:textColor="#9E6716"
+            android:textSize="@dimen/_15sdp"
+            android:layout_gravity="center"
+             android:layout_marginBottom="6dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/li_english"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@drawable/english"
+            android:id="@+id/camera"
+android:padding="@dimen/_8sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp"
+             android:textColor="#0A3357"
+            android:layout_gravity="center"
+            android:layout_marginBottom="6dp"
+            />
+
+
+    </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

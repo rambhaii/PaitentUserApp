@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:id="@+id/idCardView"
+        card_view:cardElevation="@dimen/_3sdp"
+         android:layout_height="wrap_content"
+        android:elevation="@dimen/_1sdp"
+        card_view:cardCornerRadius="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/image"
+                    android:src="@drawable/docsappoffers"
+                     android:scaleType="fitXY"
+                    android:layout_height="@dimen/_120sdp"/>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:drawableTint="@color/back_bg"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Appointment Time  :  "
+                        android:textColor="@color/red"
+                        android:id="@+id/name"
+                        android:textStyle="bold"
+                        android:textSize="17dp"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:drawableTint="@color/back_bg"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount  :  "
+                        android:visibility="gone"
+                        android:textColor="#000000"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5855855"
+                        android:id="@+id/amount"
+                        android:drawablePadding="@dimen/_5sdp"
+                         android:drawableLeft="@drawable/ic_money"
+                        android:textColor="#636060"
+                        android:textSize="14dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5855855"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/created_at"
+                        android:textColor="#636060"
+                        android:textSize="14dp"/>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:drawableTint="@color/back_bg"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Months  :  "
+                        android:visibility="gone"
+                        android:textColor="#000000"
+                        android:textSize="15dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5855855"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/months"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rect"
+                        android:layout_gravity="right"
+                        android:backgroundTint="@color/green"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_marginRight="5dp"
+                            android:drawableTint="@color/back_bg"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="    Buy    "
+                            android:id="@+id/tv_buy"
+                            android:padding="@dimen/_5sdp"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"/>
+
+
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginRight="5dp"
+                        android:drawableTint="@color/back_bg"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date  :  "
+                        android:textColor="#000000"
+                        android:textSize="15dp"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.doc24x7">
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".Video.AGApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon,android:allowBackup">
+        <activity
+            android:name=".Dashbord.ui.AllRecieptActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Dashbord.NewUser"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".DocterList.ShowAllDoctors"
+            android:exported="false" />
+        <activity
+            android:name=".PayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewDashboard.Doctor_details"
+            android:exported="true" />
+        <activity android:name=".DOctoeByIdActivity" />
+        <activity android:name=".Dashbord.ui.ShowAllOnlineDoctors" />
+        <activity android:name=".Dashbord.ui.ShowNotification" />
+        <activity android:name=".Dashbord.ui.ShowSymptom" />
+        <activity android:name=".Dashbord.ui.ProfileDetailEdit" />
+        <activity android:name=".Dashbord.ui.SupportActivity" />
+        <activity android:name=".Dashbord.ui.ProfileDetail" />
+        <activity android:name=".Dashbord.ui.PreciptionActivity" />
+        <activity android:name=".Dashbord.ui.ConsultdoctorActivity" />
+        <activity android:name=".DOctoeByIdActivityOffline" />
+        <activity android:name=".Dashbord.ui.DoctorDetailActivity" />
+        <activity android:name=".DocterList.DoctorBookingActivity" />
+        <activity android:name=".DocterList.DocterListActivity" />
+        <activity android:name=".Dashbord.ui.SearchDoctorActivity" />
+        <activity
+            android:name=".Video.CallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RTM.activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Voice.VoiceChatViewActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_RSaNE7T0U1My4g" />
+
+        <activity
+            android:name=".Dashbord.ui.ActivityUserProfile"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".AllSymtomsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Splash.ui.SplashSlider"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Splash.ui.SelectAccountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Dashbord.ui.WebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Login.ui.OtpActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:label=""
+            android:theme="@style/AppThemepopp"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".PaymentGetway.ui.PaymentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:theme="@style/AppThemepopp"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".FinadDoctorActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Register.ui.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:theme="@style/BottomSheetDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Dashbord.ui.DashboardMainNew"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".PatientDetail"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Login.ui.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode"
+            android:label=""
+            android:theme="@style/BottomSheetDialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Splash.ui.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyArA_Vr8715j1BIYIEC-8vm5MC77Yv9Tws" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service android:name=".Notification.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notification.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- Incoming call -->
+        <service android:name=".Notification.service.HeadsUpNotificationService" />
+
+        <receiver
+            android:name=".Notification.service.CallNotificationActionReceiver"
+            android:enabled="true">
+            <intent-filter android:priority="999">
+                <action android:name="ConstantApp.CALL_RECEIVE_ACTION" />
+                <action android:name="ConstantApp.CALL_CANCEL_ACTION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

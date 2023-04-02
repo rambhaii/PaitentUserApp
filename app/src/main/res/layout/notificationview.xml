@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:id="@+id/cardclick"
+    android:layout_height="wrap_content">
+<androidx.cardview.widget.CardView
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_3sdp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       android:layout_marginTop="@dimen/_5sdp"
+
+        android:weightSum="5"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:layout_weight="4"
+              android:gravity="center_horizontal"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+             android:text="P"
+             android:id="@+id/shortname"
+            android:textSize="@dimen/_25sdp"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/notificationbackimg"
+           />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+             android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dafjdsfhjdfhdjas"
+         android:textStyle="bold"
+            android:id="@+id/doctname"
+         android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_3sdp"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dafjdsfhjdfhdjas"
+               android:textColor="@color/black"
+                android:id="@+id/notimessage"
+                   android:inputType="textMultiLine"
+                android:layout_marginTop="@dimen/_3sdp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="just now"
+                 android:textAlignment="viewEnd"
+                android:id="@+id/notidate"
+              android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="#000000"-->
+<!--        />-->
+</LinearLayout>

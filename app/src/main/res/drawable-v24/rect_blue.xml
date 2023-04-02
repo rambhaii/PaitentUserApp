@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listview_background_shape"
+    android:shape="rectangle">
+    <corners android:radius="@dimen/_3sdp"/>
+    <stroke android:width="0.3dp" android:color="@color/bookingTitle" />
+    <solid android:color="@color/bookingTitle" />
+</shape>

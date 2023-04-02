@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:layout_margin="@dimen/_2sdp"
+        android:background="@drawable/rect"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:padding="8sp"
+            android:text="Update Available !"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:textSize="15sp"
+            android:gravity="center" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/textcolor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="new version of this application is available,"
+                android:textColor="@color/textcolor"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="Ok"
+                android:visibility="gone"
+                android:textColor="@color/green"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBackground"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32sp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/tv_later"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+                android:textSize="14sp"
+                 android:textColor="@color/red"
+                android:textStyle="bold"
+                 android:text="Later"
+                android:layout_toLeftOf="@+id/space"
+                android:padding="7sp"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="1sp"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/space"
+                 android:background="@color/textcolor"
+                 />
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="match_parent"
+                android:layout_height="32sp"
+                android:textSize="14sp"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:text="OK"
+                android:padding="7sp"
+                android:layout_toRightOf="@id/space"
+                android:gravity="center"/>
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+             android:background="@color/textcolor"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+             android:background="#ffffff"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

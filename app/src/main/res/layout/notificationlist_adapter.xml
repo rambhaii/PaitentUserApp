@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_marginTop="@dimen/_2sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_2sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/main_relative"
+                android:layout_marginBottom="0px">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="1dp"
+                    android:elevation="6dp"
+                    card_view:cardCornerRadius="4dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_5sdp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                             android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imagevideo"
+                                 android:layout_width="7dp"
+                                 android:layout_height="7dp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:src="@drawable/purple_circle"
+                                android:tint="@color/red"
+                                app:civ_border_color="@color/back_bg"
+                                app:civ_border_width="1dp"/>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/title"
+                                    android:layout_marginBottom="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Link Video dddLink Video ddd "
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    android:textSize="@dimen/_12sdp" />
+
+
+
+
+                                <TextView
+                                    android:id="@+id/discription"
+                                    android:layout_marginBottom="3dp"
+                                    android:layout_marginTop="@dimen/_1sdp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left"
+                                    android:text="Link Video dddd"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_12sdp" />
+
+                                <TextView
+                                    android:layout_alignParentRight="true"
+                                    android:id="@+id/date"
+                                    android:layout_marginBottom="3dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="right"
+                                    android:text="Link Video dddd"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/_10sdp" />
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/idCardView"
+            android:layout_margin="@dimen/_1sdp"
+            android:background="@drawable/rectbacknew"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <ImageView
+                    android:layout_width="@dimen/_52sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:layout_height="@dimen/_52sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/opImage"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:src="@drawable/customer_support" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:background="@color/back_bg"
+                    android:layout_height="@dimen/_1sdp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:paddingLeft="@dimen/_3sdp"
+                    android:paddingRight="@dimen/_3sdp"
+                    android:maxLines="2"
+                    android:text="5858558585855855855"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

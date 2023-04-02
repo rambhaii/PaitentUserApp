@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:2:1-8:12
+	package
+		ADDED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:3:11-43
+		INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml
+		INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:5:11-36
+		INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml
+		INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:4:11-34
+		INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml
+		INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml
+uses-sdk
+ADDED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:7:5-17
+INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:7:5-17
+INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:7:5-17
+INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:7:5-17
+INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:7:5-17
+	android:targetSdkVersion
+		INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml
+		ADDED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:7:5-17
+		INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml
+		ADDED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml:7:5-17
+		INJECTED from D:\Android All Data\Android Project\Mythela\Thela13_03_2020\Mythela User\ResideMenu\AndroidManifest.xml

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+        <!--Any child View here, TabLayout for example. This View will NOT be blurred -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_30sdp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/_10sdp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:fontFamily="@font/josefinsans_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_10sdp"
+                    android:shadowColor="#F0F6F5FA"
+                    android:shadowDx="5"
+                    android:layout_centerInParent="true"
+                    android:shadowDy="5"
+                    android:shadowRadius="6"
+                    android:singleLine="true"
+                    android:text="Booking Options"
+                    android:textColor="#070FAA"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_cancel_black_24dp" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/online"
+                    android:background="@drawable/appthemborder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:paddingBottom="@dimen/_13sdp"
+                    android:text="Online Consultation Fees"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                  />
+
+                <TextView
+                    android:id="@+id/offline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:background="@drawable/appthemborder"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:paddingBottom="@dimen/_13sdp"
+                    android:text="Offline Consultation Fees"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                     />
+
+            </LinearLayout>
+        </LinearLayout>
+    </eightbitlab.com.blurview.BlurView>
+</RelativeLayout>

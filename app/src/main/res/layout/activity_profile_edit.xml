@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+    <include layout="@layout/toolbar"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/customerimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/customer_support"
+                    app:civ_border_color="@color/back_bg"
+                    app:civ_border_width="1dp"/>
+
+
+                <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:src="@drawable/ic_plus_sign"
+                    android:tint="@color/white"
+                    android:padding="@dimen/_4sdp"
+                    android:background="@drawable/white_circle"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/til_old_pass">
+
+
+
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User Name"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:imeOptions="actionNext"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/et_contectnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contect Number"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:imeOptions="actionNext"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/et_cnf_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Confirm Password"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:imeOptions="actionDone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/etDelivery_Area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Delivery Area"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:imeOptions="actionDone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/SelectState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select State"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:imeOptions="actionDone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/SelectCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select City"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:imeOptions="actionDone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/SelectLocality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select Locality"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/_12sdp"
+                    android:imeOptions="actionDone"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectnew"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Submit"
+        android:textSize="@dimen/_13sdp"
+        android:layout_margin="@dimen/_20sdp"
+
+        android:textColor="@color/white"
+        android:id="@+id/btn_ok"/>
+
+</RelativeLayout>

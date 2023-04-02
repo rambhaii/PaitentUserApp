@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doc24x7.yoursdoc.doc24x7.Login.ui.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+         android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/rnd_new" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:srcCompat="@drawable/ic_phone"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/mob_icon"
+                    android:layout_alignLeft="@+id/til_mobile"
+                    android:layout_alignParentLeft="true" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/til_mobile"
+                    android:layout_margin="5sp">
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Number"
+                         android:fontFamily="@font/proximanovaregular"
+                         android:maxLength="14"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:textSize="16sp"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:id="@+id/ed_mobile"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:srcCompat="@drawable/ic_lock"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/lock_iconapi"
+                    android:layout_alignLeft="@+id/til_passapi"
+                    android:layout_alignParentLeft="true" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/til_passapi"
+                    app:passwordToggleTint="@color/colorPrimary"
+                     android:layout_margin="5sp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="20"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:id="@+id/apiid"
+                        android:hint="Api ID"
+                        android:text="LM123"
+                         android:fontFamily="@font/proximanovaregular"
+                         android:singleLine="true"
+                        android:textSize="16sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    app:srcCompat="@drawable/ic_lock"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/lock_icon"
+                    android:layout_alignLeft="@+id/til_pass"
+                    android:layout_alignParentLeft="true" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/til_pass"
+                    app:passwordToggleTint="@color/colorPrimary"
+                    app:passwordToggleEnabled="true"
+                    android:layout_margin="5sp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="20"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:id="@+id/ed_pass"
+                        android:hint="Password"
+                         android:fontFamily="@font/proximanovaregular"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textSize="16sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5sp"
+                android:layout_marginTop="10dp">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check_pass"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remember Password"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_login"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="Login"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/proximanovaregular"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:gravity="center"
+            android:layout_marginTop="@dimen/_12sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/proximanovaregular"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:paddingTop="5sp"
+                android:fontFamily="@font/proximanovaregular"
+                android:id="@+id/rl_fwd_pass">
+
+                <TextView
+                    android:id="@+id/tv_forgotpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click here"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+             android:gravity="center"
+             android:layout_marginTop="10sp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Register?"
+                android:textSize="12sp"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/proximanovaregular"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5sp"
+                android:paddingRight="5sp"
+                android:paddingTop="5sp"
+                android:fontFamily="@font/proximanovaregular"
+                android:id="@+id/rl_sign_up">
+
+                <TextView
+                    android:id="@+id/tv_sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click here"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.doc24x7.DocterList.ShowAllDoctors">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/neospeciality"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:padding="10dp"
+        android:layout_marginEnd="@dimen/_90sdp"
+        app:neumorph_backgroundColor="@color/white"
+        app:neumorph_inset="10dp"
+        app:neumorph_insetBottom="10dp"
+        app:neumorph_insetEnd="10dp"
+        app:neumorph_insetStart="10dp"
+        app:neumorph_insetTop="10dp"
+        app:neumorph_shadowColorDark="#1B646363"
+        app:neumorph_shadowColorLight="#0C646363"
+        app:neumorph_shadowElevation="3dp"
+        app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+        app:neumorph_strokeColor="#0C888787"
+        app:neumorph_strokeWidth="0.5sp"
+        tools:ignore="MissingClass">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/speciality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:text=" Speciality |"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+            <Spinner
+
+                android:id="@+id/spspecility"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/speciality"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+
+
+
+        <ImageView
+            android:id="@+id/searchicon"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/search_icon" />
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/neowidget"
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="10dp"
+            android:visibility="gone"
+            app:neumorph_backgroundColor="@color/white"
+            app:neumorph_inset="10dp"
+            app:neumorph_insetBottom="10dp"
+            app:neumorph_insetEnd="10dp"
+            app:neumorph_insetStart="10dp"
+            app:neumorph_insetTop="10dp"
+            app:neumorph_shadowColorDark="#1B646363"
+            app:neumorph_shadowColorLight="#0C646363"
+            app:neumorph_shadowElevation="3dp"
+            app:neumorph_shapeAppearance="@style/CustomShapeAppearance"
+            app:neumorph_strokeColor="#0C888787"
+            app:neumorph_strokeWidth="0.5sp"
+            tools:ignore="MissingClass">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/search_ic" />
+
+                <EditText
+                    android:id="@+id/serchtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@null"
+                    android:hint="Search Name or ID"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/iv_clear"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_baseline_clear_24" />
+            </RelativeLayout>
+        </soup.neumorphism.NeumorphCardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerselecteddoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

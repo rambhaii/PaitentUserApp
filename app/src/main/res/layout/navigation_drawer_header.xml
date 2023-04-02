@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:id="@+id/imageView1"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userpic"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/doctorlogo"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="1dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/li"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView1"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+
+        android:layout_toEndOf="@+id/imageView1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:text="Doc24x7"
+            android:textStyle="bold"
+            android:fontFamily="@font/proximanovaregular"
+            android:singleLine="true"
+            android:layout_marginTop="5sp"
+            android:textColor="@color/black"
+            android:id="@+id/userName" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:text="@string/viewprofile"
+            android:textStyle="bold"
+            android:fontFamily="@font/proximanovaregular"
+            android:singleLine="true"
+            android:layout_marginTop="7sp"
+            android:textColor="@color/background"
+            android:id="@+id/viewprofile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="gone"
+            android:textColor="#FFFFFF"
+            android:text="xyz@gmaul.com"
+            android:singleLine="true"
+            android:fontFamily="@font/proximanovaregular"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/email" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+         android:layout_height="@dimen/_1sdp"
+        android:background="@color/white"/>
+
+</RelativeLayout>

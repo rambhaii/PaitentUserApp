@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Newfar.BlankFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+             <LinearLayout
+                 android:orientation="horizontal"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <LinearLayout
+                     android:layout_weight="1"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="left"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="AGENT : "
+                         android:textColor="@color/black"
+                         android:textSize="@dimen/_14sdp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text=" AGENT NAME "
+                         android:textStyle="bold"
+                         android:textColor="@color/black"
+                         android:textSize="@dimen/_12sdp"/>
+
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_weight="1"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                       android:gravity="right"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="AGENT CODE"
+                         android:textColor="#000000"
+                         android:textSize="@dimen/_14sdp"/>
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="AC00001"
+                         android:textStyle="bold"
+                         android:textColor="#3855F4"
+                         android:textSize="@dimen/_12sdp"/>
+
+                 </LinearLayout>
+
+
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:padding="@dimen/_10sdp"
+                          android:src="@drawable/ic_email_phone"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submit Purchase"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:padding="@dimen/_10sdp"
+                          android:src="@drawable/ic_email_phone"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Redemption"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:padding="@dimen/_10sdp"
+                          android:src="@drawable/ic_email_phone"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Account"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/rectcolour"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Earned Points"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/rectcolour"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Redeemed Points"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:text="100"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/rectcolour"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remaining Points"
+                        android:textStyle="bold"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"/>
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RECENT SUBMIT PURCHASE "
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_10sdp"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" (Show recent 5 records) "
+                    android:textStyle="normal"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_9sdp"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</FrameLayout>

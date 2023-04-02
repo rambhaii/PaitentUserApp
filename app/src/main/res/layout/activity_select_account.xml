@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_h_new">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_slider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:gravity="center"
+
+
+            android:text="@string/tagline"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Select Account type"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/radio_prepaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:buttonTint="@color/white"
+                android:checked="true"
+                android:text="Patient"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+            <RadioButton
+                android:id="@+id/radio_postpaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:buttonTint="@color/white"
+                android:checked="false"
+                android:text="Doctor"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/bt_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:background="@drawable/signup_rect"
+                android:text="Sign Up"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/signup_rect"
+                android:text="@string/patient_login"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

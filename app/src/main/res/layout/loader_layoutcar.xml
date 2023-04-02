@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0e6ea3a6">
+
+    <RelativeLayout
+        android:layout_width="100sp"
+        android:visibility="gone"
+        android:layout_height="100sp"
+        android:background="@drawable/rect"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ProgressBar
+            android:indeterminateDrawable="@drawable/progess_effect"
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_centerInParent="true"
+         android:layout_centerHorizontal="true">
+
+        <!--  android:src="@drawable/pendingloop"   -->
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"
+            android:src="@drawable/loadernewn"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img"
+            android:padding="@dimen/_10sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:text="Loading..."
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+             android:textColor="@color/red"
+            android:textSize="15sp"
+             android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

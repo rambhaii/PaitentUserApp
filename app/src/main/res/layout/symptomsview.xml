@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="@dimen/_3sdp"
+      app:cardBackgroundColor="#FFFFFF"
+      app:cardCornerRadius="5dp"
+      app:cardElevation="8dp"
+      app:cardMaxElevation="10dp"
+      >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_margin="@dimen/_7sdp">
+
+          <TextView
+              android:id="@+id/tv_symptomname"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:drawablePadding="@dimen/_4sdp"
+              android:text="@string/symptoms"
+              android:textColor="#000000"
+              android:textSize="@dimen/_11sdp"
+              android:textStyle="bold"
+
+              />
+
+          <TextView
+              android:id="@+id/tv_symptom"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:layout_marginStart="@dimen/_11sdp"
+              android:layout_toRightOf="@+id/tv_symptomname"
+              android:drawablePadding="@dimen/_4sdp"
+              android:text="jitendra kumar "
+              android:textColor="#000000"
+              android:textSize="@dimen/_11sdp"
+
+              />
+
+          <TextView
+              android:id="@+id/tv_mobilename"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/tv_symptom"
+              android:layout_marginTop="@dimen/_6sdp"
+              android:drawablePadding="@dimen/_4sdp"
+
+              android:text="@string/phone"
+              android:textColor="#000000"
+              android:textSize="@dimen/_11sdp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:id="@+id/tv_mobile"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/tv_symptom"
+              android:layout_marginStart="@dimen/_10sdp"
+              android:layout_marginTop="@dimen/_6sdp"
+              android:layout_toRightOf="@+id/tv_mobilename"
+              android:drawablePadding="@dimen/_4sdp"
+              android:text="7860342556"
+              android:textColor="#000000"
+              android:textSize="@dimen/_11sdp" />
+<!--          <TextView-->
+<!--              android:id="@+id/tv_datename"-->
+<!--              android:layout_width="match_parent"-->
+<!--              android:layout_height="wrap_content"-->
+<!--              android:layout_below="@+id/tv_symptom"-->
+
+<!--              android:layout_marginTop="@dimen/_6sdp"-->
+<!--              android:layout_toEndOf="@+id/tv_mobile"-->
+<!--              android:drawablePadding="@dimen/_4sdp"-->
+<!--              android:text="date"-->
+<!--              android:textAlignment="textEnd"-->
+<!--              android:textSize="@dimen/_13sdp" />-->
+          <TextView
+              android:id="@+id/tv_date"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/tv_symptom"
+
+              android:layout_marginTop="@dimen/_6sdp"
+              android:layout_toEndOf="@+id/tv_mobile"
+              android:drawablePadding="@dimen/_4sdp"
+              android:text="date"
+              android:textAlignment="textEnd"
+              android:textSize="@dimen/_11sdp" />
+
+      </RelativeLayout>
+
+
+  </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

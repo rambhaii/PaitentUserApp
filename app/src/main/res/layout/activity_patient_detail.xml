@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar" />
+
+    <TextView
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:fontFamily="@font/proximanovaregular"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:text="Appointment Confirmed"
+        android:textColor="#25AA01"
+        android:textSize="@dimen/_15sdp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/lifirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_10sdp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/opImage"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/customer_support" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_28sdp"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="Dr. John Riley"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/specialities"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:fontFamily="@font/proximanovaregular"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:text="service_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/qualification"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proximanovaregular"
+                            android:gravity="right"
+                            android:singleLine="true"
+                            android:text="service_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/qualification"
+                            android:drawableTint="@color/light_grey"
+                            android:fontFamily="@font/proximanovaregular"
+                            android:gravity="left|top"
+                            android:maxLines="3"
+                            android:text="Lorem "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10sdp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_alignParentRight="true"
+                   android:layout_height="wrap_content">
+
+                   <ImageView
+                       android:layout_width="@dimen/_35sdp"
+                       android:layout_height="@dimen/_35sdp"
+                       android:src="@drawable/ic_link"
+                       android:layout_margin="@dimen/_10sdp"
+                       android:paddingTop="@dimen/_4sdp"
+                         android:textSize="@dimen/_15sdp"
+                       android:background="@drawable/backblue_new"
+                       android:textColor="@color/colorPrimary"
+                       android:id="@+id/imagereport" />
+
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginRight="@dimen/_5sdp"
+                       android:gravity="center"
+                       android:elevation="@dimen/_10sdp"
+                       android:orientation="vertical"
+                       android:padding="@dimen/_1sdp"
+                       android:visibility="visible">
+
+                       <TextView
+                           android:id="@+id/submit"
+                           style="@android:style/Widget.Button.Small"
+                           android:layout_width="@dimen/_65sdp"
+                           android:layout_height="@dimen/_32sdp"
+                           android:layout_alignParentRight="true"
+                            android:background="@drawable/appointmanet_bt"
+                           android:fontFamily="@font/proximanovaregular"
+                           android:gravity="center"
+                           android:text="@string/confirm_done"
+                           android:textColor="@color/purple"
+                           android:textSize="14sp" />
+                   </LinearLayout>
+
+
+
+               </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/liconsult"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/purpose_of_visit"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/consultation"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/lidate"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/date_and_time"
+            android:textSize="@dimen/_12sdp"
+
+            android:textColor="@color/black"></TextView>
+
+        <TextView
+            android:id="@+id/tv_datetime"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="11 jan 2017 02:45 AM"
+            android:padding="@dimen/_5sdp"
+             android:textColor="@color/black"
+             ></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+
+        android:id="@+id/liAppointment"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/appointment_for"
+            android:textColor="@color/black"></TextView>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/self"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/self" />
+
+            <RadioButton
+                android:id="@+id/other"
+                android:layout_weight="1"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:text="@string/someone_else" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_20sdp"
+        android:visibility="visible">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:text="@string/please_provide_patient_detail"
+            android:textColor="@color/black"></TextView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Patient Name"
+            android:textSize="@dimen/_12sdp"
+
+            android:textColor="@color/black"></TextView>
+
+
+
+        <EditText
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10sdp"
+             android:drawablePadding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_circle_new"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:id="@+id/PatientName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/PatientMobile_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/patient_mobile"
+            android:textSize="@dimen/_12sdp"
+
+            android:textColor="@color/black"></TextView>
+
+
+        <EditText
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_circle_new"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:drawablePadding="@dimen/_10sdp"
+             android:textColor="@color/background"
+
+            android:id="@+id/PatientMobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:inputType="number"
+            android:maxLength="10"
+            android:textSize="15sp" />
+
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linergendergroup"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"></TextView>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+              android:id="@+id/radiogroup"
+            android:padding="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male" />
+            <RadioButton
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+        </RadioGroup>
+        </LinearLayout>
+
+
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/patient_age"
+            android:textSize="@dimen/_12sdp"
+
+            android:textColor="@color/black"></TextView>
+
+     <EditText
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_circle_new"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:drawablePadding="@dimen/_10sdp"
+             android:textColor="@color/background"
+            android:id="@+id/Patientage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+             android:maxLength="2"
+            android:textSize="15sp" />
+
+
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/patient_sympton"
+            android:textSize="@dimen/_12sdp"
+
+            android:textColor="@color/black"></TextView>
+
+
+      <EditText
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_circle_new"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:drawablePadding="@dimen/_10sdp"
+             android:textColor="@color/background"
+                android:id="@+id/Patientsymptom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                 android:gravity="top"
+                android:textSize="15sp" />
+
+
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Weight (Optional)"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"></TextView>
+
+
+     <EditText
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_circle_new"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:drawablePadding="@dimen/_10sdp"
+             android:textColor="@color/background"
+                android:id="@+id/Patientweight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                 android:gravity="top"
+                android:textSize="15sp" />
+
+
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Height (Optional)"
+            android:textSize="@dimen/_12sdp"
+
+            android:textColor="@color/black"></TextView>
+
+
+       <EditText
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_circle_new"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:drawablePadding="@dimen/_10sdp"
+             android:textColor="@color/background"
+                android:id="@+id/Patientheight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                 android:gravity="top"
+                android:textSize="15sp" />
+
+
+
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="B.P (Optional)"
+            android:textSize="@dimen/_12sdp"
+
+            android:textColor="@color/black"></TextView>
+
+
+
+     <EditText
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_circle_new"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:drawablePadding="@dimen/_10sdp"
+             android:textColor="@color/background"
+                android:id="@+id/PatientBP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:hint="B.P (Optional)"
+                android:gravity="top"
+                android:textSize="15sp" />
+
+
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Blood Sugar (Optional)"
+            android:textSize="@dimen/_12sdp"
+
+            android:textColor="@color/black"></TextView>
+
+
+     <EditText
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_circle_new"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:drawablePadding="@dimen/_10sdp"
+             android:textColor="@color/background"
+                android:id="@+id/PatientSuger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                 android:gravity="top"
+                android:textSize="15sp" />
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+             android:text="@string/clientmobilenumber"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"></TextView>
+
+
+       <EditText
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_circle_new"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:drawablePadding="@dimen/_10sdp"
+             android:textColor="@color/background"
+            android:id="@+id/ClientMobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+             android:textSize="15sp" />
+
+
+         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/patient_email"
+            android:textSize="@dimen/_12sdp"
+
+            android:textColor="@color/black"></TextView>
+
+
+
+       <EditText
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10sdp"
+            android:drawableLeft="@drawable/ic_circle_new"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:drawablePadding="@dimen/_10sdp"
+             android:textColor="@color/background"
+            android:id="@+id/Clientemail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             android:textSize="15sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rev_photo"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:text="@string/bookingterm"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_9sdp"></TextView>
+
+</LinearLayout>
+</ScrollView>

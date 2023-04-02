@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Booking.ui.BookingActivity">
+
+    <include layout="@layout/toolbar"/>
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_below="@+id/toolbar"
+       android:layout_height="match_parent"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="@dimen/_5sdp"
+           android:padding="@dimen/_10sdp"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/rect"
+               android:padding="10dp"
+               android:orientation="horizontal">
+
+               <EditText
+                   android:id="@+id/piclocation"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/_12sdp"
+                     android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                   android:hint="Pic Location"
+                   android:textColor="@color/black"
+                   android:background="@android:color/transparent"
+                   android:inputType="textEmailAddress" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/rect"
+               android:padding="10dp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:orientation="horizontal">
+
+               <EditText
+                   android:id="@+id/droplocation"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/_12sdp"
+                   android:hint="Drop Location"
+                     android:textColor="@color/black"
+                   android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                   android:background="@android:color/transparent"
+                   android:inputType="textEmailAddress" />
+
+           </LinearLayout>
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_200sdp">
+
+               <fragment
+                   android:id="@+id/map"
+                   android:name="com.google.android.gms.maps.SupportMapFragment"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_alignParentStart="true" />
+
+               <ImageView
+                   android:id="@+id/imgCurrentLoc"
+                   android:layout_width="@dimen/_25sdp"
+                   android:layout_height="@dimen/_30sdp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_gravity="end"
+                   android:layout_margin="@dimen/_10sdp"
+                   android:src="@drawable/ic_location"
+                   android:tint="@color/colorPrimary"
+                   />
+
+               <ImageView
+                   android:id="@+id/current_loc_img"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:layout_margin="10dp"
+                   android:background="@drawable/nav_location"
+                   android:backgroundTint="@color/colorPrimary"
+                   android:contentDescription="@string/app_name" />
+
+           </RelativeLayout>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="@dimen/_8sdp"
+               android:text="Small Vehicle"
+               android:textSize="@dimen/_12sdp"
+               android:background="@drawable/rect"
+               android:backgroundTint="#EFEDED"
+               android:fontFamily="@font/proximanovaregular"
+               android:layout_marginTop="@dimen/_15sdp"
+               android:layout_marginBottom="@dimen/_5sdp"
+               android:textColor="@color/red"
+               android:textStyle="bold"
+               android:layout_gravity="left"
+               android:layout_marginLeft="5dp"/>
+
+           <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/recycler_viewsmall"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                    android:layout_below="@+id/toolbar"
+                    android:scrollbars="vertical" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Heavy Vehicle"
+               android:textSize="@dimen/_12sdp"
+               android:background="@drawable/rect"
+               android:backgroundTint="#EFEDED"
+               android:padding="@dimen/_8sdp"
+               android:fontFamily="@font/proximanovaregular"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginBottom="@dimen/_5sdp"
+               android:textColor="@color/red"
+               android:textStyle="bold"
+               android:layout_gravity="left"
+               android:layout_marginLeft="5dp"/>
+
+           <androidx.recyclerview.widget.RecyclerView
+                   android:id="@+id/recycler_viewHight"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginTop="1dp"
+                   android:layout_below="@+id/toolbar"
+                    android:scrollbars="vertical" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:id="@+id/applycoupan"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:layout_marginBottom="@dimen/_10sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:orientation="horizontal">
+
+
+               <ImageView
+                   android:layout_width="@dimen/_40sdp"
+                   android:layout_height="@dimen/_40sdp"
+                   android:padding="@dimen/_5sdp"
+                   android:src="@drawable/ic_coupon"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Apply Coupon"
+                   android:textSize="@dimen/_12sdp"
+                   android:fontFamily="@font/proximanovaregular"
+                   android:textColor="@color/black"
+                   android:layout_gravity="center"
+                   android:layout_marginLeft="5dp"/>
+
+
+           </LinearLayout>
+
+           <TextView
+               android:id="@+id/bt_estimate"
+               android:shadowColor = "@color/colorPrimaryDark"
+               android:shadowDx = "-2"
+               android:shadowDy = "-2"
+               android:layout_alignParentBottom="true"
+               android:layout_centerInParent="true"
+               android:shadowRadius = "1"
+               android:elevation="@dimen/_10sdp"
+               android:layout_width="match_parent"
+               android:layout_marginLeft="@dimen/_20sdp"
+               android:layout_marginRight="@dimen/_20sdp"
+               android:layout_marginBottom="@dimen/_20sdp"
+               android:layout_height="@dimen/_32sdp"
+               android:gravity="center"
+               android:background="@drawable/rectradias"
+               android:text="Get Estimate"
+               android:textStyle="bold"
+               android:paddingLeft="@dimen/_20sdp"
+               android:paddingRight="@dimen/_20sdp"
+               android:layout_gravity="center"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:fontFamily="@font/proximanovaregular"
+               android:backgroundTint="@color/button_color"
+               android:textColor="@color/white"
+               android:textSize="15sp" />
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</RelativeLayout>

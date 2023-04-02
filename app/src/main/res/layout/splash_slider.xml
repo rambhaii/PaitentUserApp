@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_above="@+id/image_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.viewpager.widget.ViewPager>
+
+        <LinearLayout android:id="@+id/image_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_above="@+id/getstartt"
+            android:background="#00000000" />
+
+
+
+
+        <TextView
+            android:id="@+id/getstartt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Get Started"
+            android:textSize="17dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:padding="15dp"
+            android:background="#ffffff"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

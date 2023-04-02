@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ic_card_ontap"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:elevation="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="6">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/_30sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sdbg\sdhfjgfjhfgdh"
+                        android:textColor="#1C1C1C"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:text="Cadsfjdjffj"
+                        android:fontFamily="@font/josefinsans_light"
+                        android:id="@+id/qualification"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cadsfjdjffj"
+                        android:id="@+id/address"
+                        android:fontFamily="@font/josefinsans_light"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:id="@+id/expwrence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="sdbg\sdhfjgfjhfgdh"
+                        android:textColor="#454545"
+                        android:textSize="14sp"
+                       />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:text="ID:jhbvhjfdb"
+                        android:textSize="14sp"
+                        android:textColor="#1C1C1C"
+                        android:id="@+id/docid"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:id="@+id/consultation"
+                        android:fontFamily="@font/josefinsans_light"
+                        android:text="R 350" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:background="@drawable/video_backdround"
+                            android:padding="@dimen/_6sdp"
+                            android:src="@drawable/video_chat_new" />
+
+                        <ImageView
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:background="@drawable/chat_icon_back"
+                            android:padding="@dimen/_6sdp"
+                            android:src="@drawable/chat_icon_new" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="#F5F5F5"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:id="@+id/cardimg"
+        android:background="@android:color/transparent"
+
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:elevation="15dp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+       >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/opImage"
+            android:scaleType="fitXY"/>
+
+    </androidx.cardview.widget.CardView>
+<!--    <ImageView-->
+<!--       -->
+<!--        android:layout_width="@dimen/_45sdp"-->
+<!--        android:layout_height="@dimen/_42sdp"-->
+<!--        android:layout_marginStart="@dimen/_5sdp"-->
+<!--        android:layout_marginTop="@dimen/_5sdp"-->
+<!--        android:background="@drawable/roundedback"-->
+<!--        android:src="@drawable/doctordemo" />-->
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_below="@+id/cardimg"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/live_red" />
+</RelativeLayout>

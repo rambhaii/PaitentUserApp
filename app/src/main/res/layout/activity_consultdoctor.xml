@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="center"
+                android:text="@string/consult_with_doctor"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/tele" />
+
+            <TextView
+                android:id="@+id/numbbbb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="left"
+                android:text="@string/tell_us_your_symptom"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_below="@+id/numbbbb"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:background="@drawable/rect">
+
+
+                <EditText
+                    android:id="@+id/consultemassage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:background="@null"
+                    android:fontFamily="sans-serif"
+                    android:gravity="start"
+                    android:hint="@string/entersymptoms"
+                    android:maxLines="5"
+                    android:paddingLeft="16.3dp"
+                    android:paddingTop="9.7dp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingBottom="9.7dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/back_bg"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/txt1"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/rect"
+                    android:drawableRight="@drawable/ic_baseline_expand_more_24"
+                    android:gravity="center"
+                    android:text="+91"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+                <EditText
+                    android:id="@+id/edMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rect"
+                    android:hint="@string/enter_valid_mobile_number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/back_bg"
+                    android:textSize="15sp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btsubmit"
+                style="@android:style/Widget.Button.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_30sdp"
+                android:background="@drawable/gradient"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:text="@string/submit"
+
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l1"
+    android:background="@color/white"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_230sdp"
+        android:layout_centerInParent="true"
+
+        android:padding="@dimen/_50sdp"
+        android:src="@drawable/doctorlogo" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Version"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:textSize="@dimen/_15sdp" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

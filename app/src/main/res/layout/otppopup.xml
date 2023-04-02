@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:background="@drawable/white_circle"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/ic_perm_device_information_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:background="@drawable/rectnew">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Please Enter your registered Phone Number.."
+                android:textSize="@dimen/_11sdp"
+                android:gravity="center"
+                android:id="@+id/textotp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otp Verification"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/til_mobile_fwp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User Otp "
+                    android:maxLength="6"
+                    android:textColor="@color/black"
+                     android:textSize="@dimen/_12sdp"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:id="@+id/ed_mobile_fwp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resendotp"
+                android:gravity="end"
+                android:text=""
+                android:layout_marginRight="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/back_bg"
+                 android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_9sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resend"
+                android:text="Resend"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/blue"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/_10sdp"
+                 android:layout_marginTop="30dp"
+                android:alpha="0.8">
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:text="Cancel"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                    android:background="@color/red"
+                    android:layout_marginLeft="@dimen/_5sdp"/>
+
+                <Button
+                    android:id="@+id/okButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_35sdp"
+                    android:text="Ok"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/_12sdp"
+                    android:textColor="@color/white"
+                     android:background="@color/green" />
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

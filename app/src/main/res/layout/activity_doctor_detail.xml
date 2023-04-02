@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.doc24x7.yoursdoc.doc24x7.Dashbord.ui.DoctorDetailActivity">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:id="@+id/doctorimafe"
+                android:scaleType="fitXY"
+                android:background="@drawable/rectbackgra"
+                android:layout_height="@dimen/_100sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:padding="@dimen/_1sdp"
+                    android:maxLines="2"
+                    android:id="@+id/name"
+                    android:fontFamily="serif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:text="Find Docto Near You"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/_10sdp" />
+
+
+
+          <TextView
+                    android:padding="@dimen/_1sdp"
+                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textColor="@color/black"
+                    android:gravity="left"
+                    android:text="BDS, MDS - Oral &amp; Maxillofacial Surgery"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/_9sdp" />
+
+
+  <TextView
+                    android:padding="@dimen/_1sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="left"
+                    android:id="@+id/service_name"
+                    android:text="BDS, MDS - Oral &amp; Maxillofacial Surgery"
+                    android:layout_gravity="left"
+                    android:textSize="@dimen/_9sdp" />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:padding="@dimen/_1sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:gravity="left"
+            android:drawableLeft="@drawable/nav_location"
+            android:drawableTint="@color/colorPrimary"
+            android:id="@+id/address"
+             android:layout_gravity="left"
+            android:textSize="@dimen/_9sdp" />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
